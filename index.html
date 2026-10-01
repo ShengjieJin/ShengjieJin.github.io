@@ -1,446 +1,168 @@
-
-
-<!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
-
-
-
+<!doctype html>
+<html lang="en" id="top">
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Shengjie Jin">
-  <meta name="keywords" content="">
-  
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Shengjie Jin&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Shengjie Jin&#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Shengjie Jin">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>Shengjie Jin&#39;s Blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DJMjealCxlaWnv1x85eLtwXD-gzGzoHsz","app_key":"TDcVhFDpeGCqZX2IG4Lw1ezc","server_url":null,"path":"https://shengjiejin.github.io/","ignore_local":false}},"search_path":"/local-search.xml"};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shengjie Jin is a Ph.D. student at Renmin University of China, interested in multimodal large language models, AI agents, and recursive self-improvement.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Shengjie Jin | Academic Homepage</title>
+  <link rel="canonical" href="https://shengjiejin.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shengjie Jin">
+  <meta property="og:title" content="Shengjie Jin | Academic Homepage">
+  <meta property="og:description" content="Ph.D. student at Renmin University of China. Research in multimodal large language models, AI agents, and recursive self-improvement.">
+  <meta property="og:url" content="https://shengjiejin.github.io/">
+  <meta property="og:image" content="https://shengjiejin.github.io/assets/share-avatar.jpg">
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="480">
+  <meta property="og:image:alt" content="Shengjie Jin">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shengjie Jin | Academic Homepage">
+  <meta name="twitter:description" content="Ph.D. student at Renmin University of China. Multimodal large language models, AI agents, and recursive self-improvement.">
+  <meta name="twitter:image" content="https://shengjiejin.github.io/assets/share-avatar.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=f7a71933c02b">
+  <script src="site.js?v=11d7968a80a6" defer></script>
+</head>
 <body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Shengjie Jin&#39;s Blog</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="Shengjie Jin&#39;s Blog"></span>
-          
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="#top">Shengjie Jin <span aria-hidden="true">/</span> RUC</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#education">Education</a><a href="#honors">Honors</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="name">
+        <div class="intro-copy">
+          <h1 id="name">Shengjie Jin</h1>
+          <p class="role">Ph.D. student · Beijing, China</p>
+          <p class="bio">I am a third-year Ph.D. student at the <strong>Gaoling School of Artificial Intelligence</strong>, Renmin University of China, advised by Prof. <a href="https://gsai.ruc.edu.cn/luzhiwu" target="_blank" rel="noopener noreferrer">Zhiwu Lu</a>. Previously, I studied Computer Science and Technology at China University of Geosciences (Wuhan).</p>
+          <p class="research-summary">My research interests include <strong>multimodal large language models</strong>, <strong>AI agents</strong>, and <strong>recursive self-improvement</strong> (RSI). My recent work spans GUI agents and agent self-distillation.</p>
+          <p class="availability"><span class="availability-dot" aria-hidden="true"></span>I’m looking for research internships.</p>
+          <p class="personal">Away from research, I love music and singing <span role="img" aria-label="microphone">🎤</span>, and I’m giving tennis a shot. <span role="img" aria-label="tennis">🎾</span></p>
         </div>
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
+        <div class="profile-side">
+          <figure class="portrait">
+            <img src="assets/avatar-480.webp" srcset="assets/avatar-240.webp 240w, assets/avatar-480.webp 480w" sizes="(max-width: 600px) 100px, (max-width: 800px) 175px, 208px" width="1254" height="1254" alt="Shengjie Jin" fetchpriority="high">
+          </figure>
+          <div class="social-links" aria-label="Contact and profiles">
+            <a href="mailto:jinshengjie@ruc.edu.cn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+</svg><span>Email</span></a>
+            <a href="https://scholar.google.com/citations?user=MmAbh7oAAAAJ" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="social-icon" aria-hidden="true" focusable="false" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" /></svg><span>Google Scholar</span></a>
+            <a href="https://github.com/ShengjieJin" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/shengjie-jin-676384440/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+</svg><span>LinkedIn</span></a>
+          </div>
         </div>
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/02/28/%E8%85%BE%E8%AE%AF%E4%BA%91OCR%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_self">
-          腾讯云OCR使用教程
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/02/28/%E8%85%BE%E8%AE%AF%E4%BA%91OCR%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_self">
-        <div>
-          腾讯云OCR API使用教程本教程介绍腾讯云OCR API的使用方法，包括Java、.NET、C++、Node.js、Python、GO六种编程语言的调用方式，从环境配置到案例实现，每种语言都配备了示例代码和可直接运行的Demo以方便使用。 您可以从以下仓库中下载示例代码：https://github.com/ShengjieJin/tencentcloudOCRDemo 准备工作在开始使用腾讯云
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-02-28 23:00" pubdate>
-              2023-02-28
-            </time>
+      </section>
+      <section class="research section" id="research" aria-labelledby="research-heading">
+        <div class="section-heading"><h2 id="research-heading">Research</h2></div>
+        <article class="paper" aria-labelledby="resail-title">
+          <a class="paper-figure" href="assets/figures/resail.png" data-figure-title="ReSAIL method overview">
+            <span class="figure-canvas"><img src="assets/figures/resail-800.webp" srcset="assets/figures/resail-480.webp 480w, assets/figures/resail-800.webp 800w" sizes="(max-width: 600px) calc(100vw - 60px), (max-width: 800px) 194px, 248px" width="1600" height="828" alt="A comparison of baseline self-distillation and ReSAIL, including informative step selection, trajectory weighting, and preservation of privileged-information behavior." loading="lazy" decoding="async"></span>
+            <span class="figure-caption">View figure <span aria-hidden="true">＋</span></span>
+          </a>
+          <div class="paper-copy">
+            <h3 id="resail-title"><a class="" href="https://arxiv.org/abs/2609.39306" target="_blank" rel="noopener noreferrer"><span class="paper-name">ReSAIL:</span> Mitigating Collapse in Iterative Agent Self-Distillation</a></h3>
+            <p class="authors"><strong>Shengjie Jin</strong>, Hengbo Xu, Zelong Sun, YuJie Guo, Zhiwu Lu</p>
+            <div class="publication-meta"><span class="preprint">arXiv 2026</span><span class="paper-links"><a class="" href="https://arxiv.org/abs/2609.39306" target="_blank" rel="noopener noreferrer">Paper ↗</a></span></div>
+            <p class="tldr"><span class="tldr-label">TL;DR</span> ReSAIL <strong>mitigates performance collapse</strong> in iterative LLM agent self-distillation by selecting informative interaction steps and preserving behavior conditioned on privileged information as the student becomes the next teacher.</p>
           </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/tutorial/" class="category-chain-item">tutorial</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
+        </article>
+        <article class="paper" aria-labelledby="anchorgui-title">
+          <a class="paper-figure" href="assets/figures/anchorgui.png" data-figure-title="AnchorGUI: memory and learning">
+            <span class="figure-canvas"><img src="assets/figures/anchorgui-800.webp" srcset="assets/figures/anchorgui-480.webp 480w, assets/figures/anchorgui-800.webp 800w" sizes="(max-width: 600px) calc(100vw - 60px), (max-width: 800px) 194px, 248px" width="1600" height="858" alt="A comparison of existing GUI agents and AnchorGUI, showing asymmetric visual memory and learning within and across attempts." loading="lazy" decoding="async"></span>
+            <span class="figure-caption">View figure <span aria-hidden="true">＋</span></span>
+          </a>
+          <div class="paper-copy">
+            <h3 id="anchorgui-title"><a class="" href="https://arxiv.org/abs/2609.15457" target="_blank" rel="noopener noreferrer"><span class="paper-name">AnchorGUI:</span> Asymmetric Memory for Dual-Scale Learning in GUI Navigation</a></h3>
+            <p class="authors"><strong>Shengjie Jin</strong>, Zelong Sun, Hengbo Xu, Yanbiao Ma, Zhiwu Lu</p>
+            <div class="publication-meta"><span class="venue">ECCV 2026</span><span class="paper-links"><a class="" href="https://arxiv.org/abs/2609.15457" target="_blank" rel="noopener noreferrer">Paper ↗</a></span></div>
+            <p class="tldr"><span class="tldr-label">TL;DR</span> AnchorGUI compares expected and observed GUI transitions to build <strong>asymmetric memory</strong>, retaining screenshots for mismatches while compressing consistent steps into text. This supports immediate error correction within a trial and efficient experience distillation across trials.</p>
           </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
-            
+        </article>
+        <article class="paper" aria-labelledby="visionpulse-title">
+          <a class="paper-figure" href="assets/figures/visionpulse.png" data-figure-title="VisionPulse framework">
+            <span class="figure-canvas"><img src="assets/figures/visionpulse-800.webp" srcset="assets/figures/visionpulse-480.webp 480w, assets/figures/visionpulse-800.webp 800w" sizes="(max-width: 600px) calc(100vw - 60px), (max-width: 800px) 194px, 248px" width="697" height="852" alt="The VisionPulse framework for dynamically selecting visual tokens during multimodal reasoning." loading="lazy" decoding="async"></span>
+            <span class="figure-caption">View figure <span aria-hidden="true">＋</span></span>
+          </a>
+          <div class="paper-copy">
+            <h3 id="visionpulse-title"><a class="" href="https://arxiv.org/abs/2605.31457" target="_blank" rel="noopener noreferrer"><span class="paper-name">VisionPulse:</span> Dynamic Visual Sparsity for Efficient Multimodal Reasoning</a></h3>
+            <p class="authors">Hengbo Xu, <strong>Shengjie Jin</strong>, Yanbiao Ma, Zhiwu Lu</p>
+            <div class="publication-meta"><span class="venue">ICML 2026</span><span class="paper-links"><a class="" href="https://arxiv.org/abs/2605.31457" target="_blank" rel="noopener noreferrer">Paper ↗</a></span></div>
+            <p class="tldr"><span class="tldr-label">TL;DR</span> VisionPulse adapts both the number and selection of visual tokens at each decoding step using visual attention, <strong>without additional training</strong>. This reduces redundant visual computation and shortens reasoning traces while maintaining comparable accuracy on the evaluated benchmarks.</p>
           </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
+        </article>
+        <article class="paper" aria-labelledby="ram-ttt-title">
+          <a class="paper-figure" href="assets/figures/ram-ttt.png" data-figure-title="RAM-TTT method overview">
+            <span class="figure-canvas"><img src="assets/figures/ram-ttt-800.webp" srcset="assets/figures/ram-ttt-480.webp 480w, assets/figures/ram-ttt-800.webp 800w" sizes="(max-width: 600px) calc(100vw - 60px), (max-width: 800px) 194px, 248px" width="1600" height="876" alt="The RAM-TTT pipeline: retrieve and rerank relevant examples, adapt the model at test time, then generate an answer." loading="lazy" decoding="async"></span>
+            <span class="figure-caption">View figure <span aria-hidden="true">＋</span></span>
+          </a>
+          <div class="paper-copy">
+            <h3 id="ram-ttt-title"><a class="" href="papers/ram-ttt.pdf" target="_blank" rel="noopener noreferrer">Retrieval-Augmented Meta Test-Time Training for Multimodal Reasoning</a></h3>
+            <p class="authors"><strong>Shengjie Jin</strong>, Zelong Sun, Hengbo Xu, Yuyao Zhang, Dong Jing, Zhiwu Lu</p>
+            <div class="publication-meta"><span class="preprint">Manuscript · 2025</span><span class="paper-links"><a class="" href="papers/ram-ttt.pdf" target="_blank" rel="noopener noreferrer">Paper ↗</a></span></div>
+            <p class="tldr"><span class="tldr-label">TL;DR</span> RAM-TTT retrieves relevant examples and reranks them using model confidence, then <strong>adapts a vision-language model</strong> at test time through leave-one-out episodes that predict each retrieved example’s answer using the others as context.</p>
+          </div>
+        </article>
+        <article class="paper" aria-labelledby="mmrole-title">
+          <a class="paper-figure" href="assets/figures/mmrole.png" data-figure-title="MMRole framework">
+            <span class="figure-canvas"><img src="assets/figures/mmrole-800.webp" srcset="assets/figures/mmrole-480.webp 480w, assets/figures/mmrole-800.webp 800w" sizes="(max-width: 600px) calc(100vw - 60px), (max-width: 800px) 194px, 248px" width="1600" height="1542" alt="The MMRole framework for constructing multimodal character profiles and role-playing conversations." loading="lazy" decoding="async"></span>
+            <span class="figure-caption">View figure <span aria-hidden="true">＋</span></span>
+          </a>
+          <div class="paper-copy">
+            <h3 id="mmrole-title"><a class="" href="https://arxiv.org/abs/2408.04203" target="_blank" rel="noopener noreferrer"><span class="paper-name">MMRole:</span> A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents</a></h3>
+            <p class="authors">Yanqi Dai, Huanran Hu, Lei Wang, <strong>Shengjie Jin</strong>, Xu Chen, Zhiwu Lu</p>
+            <div class="publication-meta"><span class="venue">ICLR 2025</span><span class="paper-links"><a class="" href="https://arxiv.org/abs/2408.04203" target="_blank" rel="noopener noreferrer">Paper ↗</a></span></div>
+            <p class="tldr"><span class="tldr-label">TL;DR</span> MMRole provides a dataset of character profiles and image-based dialogues, a specialized role-playing agent, and evaluation with reference answers. Together, these support developing and assessing agents that <strong>interpret images</strong> while staying consistent with a character’s personality, knowledge, and speaking style.</p>
+          </div>
+        </article>
+      </section>
+      <section class="education section" id="education" aria-labelledby="education-heading">
+        <div class="section-heading"><h2 id="education-heading">Education</h2></div>
+        <ul class="education-list" role="list">
+          <li>
+            <span class="school-crest school-crest--ruc"><img src="assets/universities/ruc.webp" width="739" height="240" alt="Renmin University of China emblem" loading="lazy"></span>
+            <div class="education-copy">
+              <h3><a href="https://www.ruc.edu.cn/" target="_blank" rel="noopener noreferrer">Renmin University of China<span class="link-arrow" aria-hidden="true">↗</span></a></h3>
+              <p class="education-degree">Ph.D. student in Artificial Intelligence</p>
+              <p class="education-school">Gaoling School of Artificial Intelligence</p>
             </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
+            <p class="education-date"><span>2024–2029</span><small>Expected graduation</small></p>
+          </li>
+          <li>
+            <span class="school-crest"><img src="assets/universities/cug.webp" width="180" height="180" alt="China University of Geosciences emblem" loading="lazy"></span>
+            <div class="education-copy">
+              <h3><a href="https://en.cug.edu.cn/" target="_blank" rel="noopener noreferrer">China University of Geosciences (Wuhan)<span class="link-arrow" aria-hidden="true">↗</span></a></h3>
+              <p class="education-degree">Undergraduate in Computer Science and Technology</p>
+              <p class="education-school">School of Computer Science</p>
+            </div>
+            <p class="education-date"><span>2020–2024</span></p>
+          </li>
+        </ul>
+      </section>
+      <section class="honors section" id="honors" aria-labelledby="honors-heading">
+        <div class="section-heading"><h2 id="honors-heading">Honors &amp; Awards</h2></div>
+        <ul class="honors-list" role="list">
+          <li><span class="honor-date"><span>2024–2025,</span> <span>2025–2026</span></span><div><p class="honor-title">Academic Scholarship</p><p class="entry-note">Renmin University of China</p></div></li>
+          <li><span class="honor-date">2022–2023</span><div><p class="honor-title" title="感恩中国近现代科学家奖学金">Scholarship Honoring Modern and Contemporary Chinese Scientists</p><p class="entry-note">China University of Geosciences (Wuhan) <span class="honor-distinction">One of 12 recipients university-wide</span></p></div></li>
+          <li><span class="honor-date">2021–2022</span><div><p class="honor-title">President’s Scholarship</p><p class="entry-note">China University of Geosciences (Wuhan)</p></div></li>
+          <li><span class="honor-date">2020–2021</span><div><p class="honor-title">National Scholarship</p><p class="entry-note">Ministry of Education of China</p></div></li>
+        </ul>
+      </section>
+    </main>
+    <footer><span>Shengjie Jin · Beijing, China</span><a href="mailto:jinshengjie@ruc.edu.cn">jinshengjie@ruc.edu.cn</a><a class="back-to-top" href="#top">Back to top ↑</a></footer>
   </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-    <div class="statistics">
-  
-  
-
-  
-    
-      <span id="leancloud-site-pv-container" style="display: none">
-        总访问量 
-        <span id="leancloud-site-pv"></span>
-         次
-      </span>
-    
-    
-      <span id="leancloud-site-uv-container" style="display: none">
-        总访客数 
-        <span id="leancloud-site-uv"></span>
-         人
-      </span>
-    
-    
-
-  
-</div>
-
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  <script defer src="/js/leancloud.js" ></script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
-  </noscript>
+  <dialog id="figure-dialog" aria-labelledby="figure-title">
+    <div class="dialog-heading"><h2 id="figure-title">Research figure</h2><button type="button" class="dialog-close" autofocus aria-label="Close figure">Close <span aria-hidden="true">×</span></button></div>
+    <div class="figure-toolbar"><button type="button" class="figure-control figure-zoom-out" aria-label="Zoom out" disabled>−</button><button type="button" class="figure-control figure-zoom-in" aria-label="Zoom in" disabled>+</button><button type="button" class="figure-control figure-fit" disabled>Fit</button><a class="figure-original" target="_blank" rel="noopener noreferrer">Open original ↗</a><span id="figure-hint" aria-live="polite">Full figure</span></div>
+    <div class="figure-viewport" tabindex="0" role="region" aria-label="Research figure viewer" aria-describedby="figure-hint"><img class="enlarged-figure" alt=""></div>
+  </dialog>
 </body>
 </html>
