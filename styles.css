@@ -81,14 +81,17 @@ h1 { margin: 0 0 9px; font-size: 43px; font-weight: 600; line-height: 1.15; lett
 .school-crest img { display: block; width: 100%; height: 100%; object-fit: contain; }
 /* The official RUC image includes white space around the circular emblem. */
 .school-crest--ruc img { object-fit: cover; transform: scale(1.29); }
-.education-copy h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; letter-spacing: -.15px; text-wrap: pretty; }
+.education-copy h3 { margin: 0 0 2px; font-size: 17px; font-weight: 600; line-height: 24px; letter-spacing: -.15px; text-wrap: pretty; }
 .education-copy h3 a { color: var(--ink); }
 .education-copy h3 a:hover { color: var(--blue); text-decoration: none; }
 .link-arrow { display: inline-block; margin-left: 7px; color: #7d97aa; font-size: 13px; transition: transform .2s var(--ease), color .2s ease; }
 .education-copy a:hover .link-arrow, .education-copy a:focus-visible .link-arrow { color: var(--blue); transform: translate(2px, -2px); }
-.education-degree { margin: 0; font-size: 14px; line-height: 1.65; }
-.education-school { margin: 3px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-.education-date { margin: 1px 0 0; text-align: right; color: var(--blue); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.education-degree { margin: 6px 0 0; font-size: 14px; font-weight: 500; line-height: 22px; }
+.education-school { margin: 0; color: var(--muted); font-size: 14px; line-height: 22px; }
+.education-advisors { margin: 2px 0 0; font-size: 14px; line-height: 22px; }
+.advisor-label, .education-separator { color: var(--muted); }
+.education-separator { padding: 0 3px; }
+.education-date { margin: 0; line-height: 24px; text-align: right; color: var(--blue); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .education-date small { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; font-weight: 400; }
 .honors-list li { display: grid; grid-template-columns: 172px minmax(0, 1fr); gap: 28px; padding: 14px 0; border-bottom: 1px solid #edf1f4; }
 .honors-list li:first-child { padding-top: 0; }
@@ -177,9 +180,8 @@ dialog[open]::backdrop { animation: backdrop-in .22s ease; }
   .education, .honors { margin-top: 30px; }
   .education-list li { grid-template-columns: 42px minmax(0, 1fr); gap: 8px 14px; padding: 22px 0; }
   .school-crest { width: 42px; height: 42px; margin-top: 2px; }
-  .education-copy h3 { font-size: 16px; margin-bottom: 6px; }
-  .education-degree { font-size: 13px; }
-  .education-school { font-size: 12px; }
+  .education-copy h3 { font-size: 16px; margin-bottom: 2px; line-height: 24px; }
+  .education-degree, .education-school, .education-advisors { font-size: 13px; line-height: 21px; }
   .education-date { grid-column: 2; text-align: left; font-size: 12px; margin: 0; }
   .education-date small { display: inline; margin-left: 8px; font-size: 11px; }
   .honors-list li { grid-template-columns: 88px minmax(0, 1fr); gap: 14px; }
