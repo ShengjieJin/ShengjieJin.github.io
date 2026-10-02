@@ -100,3 +100,12 @@ window.addEventListener('scroll', scheduleNavigationUpdate, { passive: true });
 window.addEventListener('resize', scheduleNavigationUpdate);
 window.addEventListener('pageshow', scheduleNavigationUpdate);
 updateNavigation();
+
+// Count only the public homepage; local previews never send analytics.
+if (window.location.hostname === 'shengjiejin.github.io') {
+  const analyticsScript = document.createElement('script');
+  analyticsScript.dataset.goatcounter = 'https://shengjiejin.goatcounter.com/count';
+  analyticsScript.async = true;
+  analyticsScript.src = 'https://gc.zgo.at/count.js';
+  document.head.appendChild(analyticsScript);
+}

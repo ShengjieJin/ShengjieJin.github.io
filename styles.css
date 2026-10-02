@@ -35,8 +35,8 @@ h1 { margin: 0 0 9px; font-size: 43px; font-weight: 600; line-height: 1.15; lett
 .personal { color: var(--muted); font-size: 14px; }
 .availability { width: fit-content; max-width: 100%; margin: 17px 0 15px; padding: 7px 12px; border-radius: 7px; background: var(--wash); display: flex; gap: 9px; align-items: baseline; color: var(--blue); font-size: 14px; font-weight: 500; }
 .availability-dot { flex: 0 0 6px; height: 6px; border-radius: 50%; background: #4e829e; align-self: center; }
-.social-links { display: grid; grid-template-columns: repeat(2, max-content); justify-content: center; gap: 2px 3px; margin-top: 12px; font-size: 12px; font-weight: 500; }
-.social-links a { display: flex; align-items: center; gap: 7px; min-height: 36px; padding: 4px 7px; border-radius: 7px; white-space: nowrap; transition: background .2s ease, box-shadow .2s ease, transform .2s var(--ease); }
+.social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 12px; font-size: 12px; font-weight: 500; }
+.social-links a { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 42px; padding: 6px 7px; border: 1px solid transparent; border-radius: 8px; white-space: nowrap; transition: background .2s ease, box-shadow .2s ease, transform .2s var(--ease); }
 .social-links a:hover, .social-links a:focus-visible { background: var(--wash); text-decoration: none; }
 .social-icon { display: block; width: 16px; height: 16px; flex: 0 0 16px; }
 .portrait { margin: 5px 0 0; }
@@ -133,7 +133,7 @@ dialog[open]::backdrop { animation: backdrop-in .22s ease; }
 @media (max-width: 800px) {
   .page { padding: 0 29px; }
   .intro { gap: 35px; grid-template-columns: minmax(0,1fr) 175px; }
-  .social-links { column-gap: 2px; font-size: 11px; }
+  .social-links { gap: 6px; font-size: 11px; }
   .paper { grid-template-columns: 202px minmax(0,1fr); gap: 22px; margin-left: -15px; margin-right: -15px; padding: 22px 14px; }
   .paper h3 { font-size: 17px; }
   .education-list li { grid-template-columns: 54px minmax(0, 1fr) 132px; gap: 18px; }
@@ -158,8 +158,8 @@ dialog[open]::backdrop { animation: backdrop-in .22s ease; }
   .bio, .research-summary, .personal { grid-column: 1 / -1; margin: 0; font-size: 15px; line-height: 1.7; }
   .personal { font-size: 14px; }
   .availability { grid-column: 1 / -1; margin: 0; font-size: 13px; padding: 7px 10px; }
-  .social-links { grid-column: 1 / -1; grid-row: 3; gap: 0 20px; margin: 0 0 2px; font-size: 13px; }
-  .social-links a { min-height: 42px; }
+  .social-links { grid-column: 1 / -1; grid-row: 3; gap: 8px; margin: 0 0 2px; font-size: 13px; }
+  .social-links a { min-height: 44px; }
   .section { padding-top: 25px; }
   .section-heading { flex-wrap: wrap; gap: 3px 13px; }
   .section-heading h2 { font-size: 20px; }
@@ -202,7 +202,7 @@ dialog[open]::backdrop { animation: backdrop-in .22s ease; }
   nav { gap: 10px; }
   .intro { grid-template-columns: minmax(0,1fr) 88px; gap: 12px 14px; }
   h1 { font-size: 31px; }
-  .social-links { column-gap: 24px; }
+  .social-links { gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
