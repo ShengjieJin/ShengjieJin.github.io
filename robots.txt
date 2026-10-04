@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shengjiejin.github.io/sitemap.xml

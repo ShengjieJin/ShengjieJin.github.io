@@ -1,0 +1,119 @@
+/* Homepage-only editorial layout; project pages retain their reviewed styles. */
+.home-page .page { width: calc(100% - 80px); max-width: 960px; padding: 0; margin-inline: auto; }
+.home-page .site-header { margin: 0; padding: 12px 0; }
+.home-page .intro { grid-template-columns: minmax(0,1fr) 208px; gap: 48px; padding: 40px 0; }
+.home-page h1 { font-size: 40px; line-height: 48px; font-weight: 600; letter-spacing: -1px; margin: 0 0 8px; }
+.home-page .role { font-size: 14px; line-height: 22px; margin: 0 0 24px; }
+.home-page .bio, .home-page .research-summary { font-size: 16px; line-height: 28px; margin-bottom: 16px; text-wrap: pretty; }
+.home-page .personal { font-size: 14px; line-height: 24px; margin: 0; }
+.home-page .availability { margin: 24px 0 16px; padding: 8px 12px; border-radius: 4px; }
+.home-page .portrait { margin: 0; }
+.home-page .social-links { margin-top: 16px; gap: 4px 8px; font-size: 13px; line-height: 20px; }
+.home-page .social-links a { min-height: 40px; border-radius: 3px; }
+.home-page .section { padding-top: 32px; }
+.home-page .section-heading { margin-bottom: 24px; }
+.home-page .section-heading h2 { font: 500 28px/36px Georgia, "Times New Roman", serif; letter-spacing: -.3px; }
+.home-page .paper { grid-template-columns: 288px minmax(0,1fr); gap: 32px; margin: 0; padding: 32px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: white; box-shadow: none; transform: none; }
+.home-page .paper:first-of-type { padding-top: 0; }
+.home-page .paper:last-child { padding-bottom: 0; border-bottom: 0; }
+.home-page .paper:hover, .home-page .paper:focus-within { background: white; box-shadow: none; transform: none; border-color: var(--line); }
+.home-page .paper-figure { margin: 0; align-self: center; }
+.home-page .figure-canvas { width: 100%; height: auto; min-height: 0; padding: 0; border-radius: 0; background: white; box-shadow: none; }
+.home-page .figure-canvas img { width: 100%; height: auto; max-height: 208px; object-fit: contain; }
+.home-page .paper-figure:hover img { transform: none; }
+.home-page .paper-figure:hover .figure-canvas, .home-page .paper-figure:focus-visible .figure-canvas { box-shadow: none; }
+.home-page .figure-caption { margin-top: 8px; padding: 0; font-size: 12px; line-height: 20px; }
+.home-page .paper h3 { margin: 0 0 8px; font-size: 22px; line-height: 30px; font-weight: 600; letter-spacing: -.25px; text-wrap: pretty; }
+.home-page .paper-name { font-weight: 650; }
+.home-page .title-term, .home-page .authors > span, .home-page .authors > strong { white-space: nowrap; }
+.home-page .authors { font-size: 13px; line-height: 22px; margin-bottom: 12px; }
+.home-page .publication-meta { gap: 8px 16px; }
+.home-page .venue { font-size: 12px; line-height: 20px; padding: 2px 6px; border-radius: 3px; margin-left: 0; }
+.home-page .preprint { font-size: 12px; line-height: 20px; }
+.home-page .paper-links { flex-wrap: wrap; gap: 8px; }
+.home-page .paper-links a { min-height: 32px; padding: 4px 10px; font-size: 12px; line-height: 20px; border-radius: 3px; }
+.home-page .paper-links a:hover, .home-page .social-links a:hover { transform: none; }
+.home-page .tldr { font-size: 15px; line-height: 24px; margin-top: 12px; text-wrap: pretty; }
+.home-page .tldr-label { font-size: 10px; line-height: 16px; }
+.home-page .education, .home-page .honors { margin-top: 48px; padding-top: 32px; }
+.home-page .education-list li { grid-template-columns: 56px minmax(0,1fr) 160px; gap: 24px; padding: 24px 0; }
+.home-page .education-list li:first-child { padding-top: 0; }
+.home-page .education-list li:last-child { padding-bottom: 0; border-bottom: 0; }
+.home-page .school-crest { width: 56px; height: 56px; margin-top: 2px; }
+.home-page .education-copy h3 { font-size: 18px; line-height: 26px; font-weight: 600; }
+.home-page .education-school { font-size: 14px; line-height: 22px; }
+.home-page .education-degree { font-size: 14px; line-height: 24px; margin-top: 4px; }
+.home-page .education-advisors { font-size: 14px; line-height: 22px; }
+.home-page .education-date { font-size: 14px; line-height: 24px; }
+.home-page .education-date small { font-size: 12px; line-height: 20px; margin-top: 4px; }
+.home-page .honors-list li { grid-template-columns: 160px minmax(0,1fr); gap: 32px; padding: 16px 0; }
+.home-page .honors-list li:first-child { padding-top: 0; }
+.home-page .honors-list li:last-child { padding-bottom: 0; }
+.home-page .honor-date { font-size: 13px; line-height: 22px; }
+.home-page .honor-title { font-size: 16px; line-height: 24px; font-weight: 550; }
+.home-page .entry-note { font-size: 13px; line-height: 21px; margin-top: 4px; }
+.home-page footer { margin-top: 40px; padding: 24px 0 32px; }
+@media(max-width:1100px) { .home-page .page { width: calc(100% - 64px); } }
+@media(min-width:701px) and (max-width:900px) {
+  .home-page .intro { grid-template-columns: minmax(0,1fr) 176px; gap: 32px; }
+  .home-page .paper { grid-template-columns: 240px minmax(0,1fr); gap: 24px; }
+  .home-page .paper h3 { font-size: 20px; line-height: 28px; }
+  .home-page .figure-canvas img { max-height: 192px; }
+  .home-page .education-list li { grid-template-columns: 56px minmax(0,1fr) 144px; gap: 16px; }
+  .home-page .honors-list li { grid-template-columns: 144px minmax(0,1fr); gap: 24px; }
+}
+@media(max-width:700px) {
+  .home-page .page { width: calc(100% - 48px); }
+  .home-page .site-header { margin: 0; padding: 8px 0; gap: 12px; }
+  .home-page nav { font-size: 12px; gap: 16px; }
+  .home-page nav a { min-height: 40px; }
+  .home-page .intro { grid-template-columns: minmax(0,1fr) 96px; gap: 16px; padding: 32px 0; }
+  .home-page .intro-copy, .home-page .profile-side { display: contents; }
+  .home-page h1 { grid-column: 1; grid-row: 1; font-size: 30px; line-height: 36px; margin: 0; align-self: end; }
+  .home-page .role { grid-column: 1; grid-row: 2; font-size: 12px; line-height: 20px; margin: 0; align-self: start; }
+  .home-page .portrait { grid-column: 2; grid-row: 1 / 3; width: 96px; margin: 0; }
+  .home-page .social-links { grid-column: 1 / -1; grid-row: 3; margin: 0 0 8px; }
+  .home-page .social-links a { min-height: 44px; }
+  .home-page .bio, .home-page .research-summary, .home-page .personal, .home-page .availability { grid-column: 1 / -1; margin: 0; }
+  .home-page .bio, .home-page .research-summary { font-size: 15px; line-height: 26px; }
+  .home-page .personal { font-size: 14px; line-height: 24px; }
+  .home-page .availability { font-size: 13px; }
+  .home-page .section-heading h2 { font-size: 25px; line-height: 32px; }
+  .home-page .paper { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; margin: 0; }
+  .home-page .paper-copy { grid-row: 1; }
+  .home-page .paper h3 { font-size: 20px; line-height: 28px; }
+  .home-page .publication-meta { align-items: start; }
+  .home-page .venue, .home-page .preprint { flex-basis: 100%; }
+  .home-page .venue { width: fit-content; flex-basis: auto; }
+  .home-page .paper-links { width: 100%; }
+  .home-page .paper-links a { min-height: 40px; }
+  .home-page .tldr { font-size: 15px; line-height: 25px; }
+  .home-page .paper-figure { width: 100%; max-width: none; }
+  .home-page .figure-canvas { height: auto; }
+  .home-page .figure-canvas img { height: auto; max-height: 260px; }
+  .home-page .education, .home-page .honors { margin-top: 40px; }
+  .home-page .education-list li { grid-template-columns: 48px minmax(0,1fr); gap: 8px 16px; }
+  .home-page .education-copy { display: contents; }
+  .home-page .school-crest { grid-column: 1; grid-row: 1; width: 48px; height: 48px; }
+  .home-page .education-copy h3 { grid-column: 2; grid-row: 1; font-size: 17px; line-height: 24px; margin: 0; text-wrap: pretty; }
+  .home-page .education-date { grid-column: 2; grid-row: 2; font-size: 12px; line-height: 20px; text-align: left; margin: 0; }
+  .home-page .education-date small { display: inline; margin: 0 0 0 8px; font-size: 11px; }
+  .home-page .education-school { grid-column: 1 / -1; grid-row: 3; font-size: 14px; line-height: 22px; }
+  .home-page .education-degree { grid-column: 1 / -1; grid-row: 4; font-size: 14px; line-height: 22px; margin: 0; }
+  .home-page .education-advisors { grid-column: 1 / -1; grid-row: 5; font-size: 14px; line-height: 22px; }
+  .home-page .honors-list li { grid-template-columns: 1fr; gap: 4px; padding: 16px 0; }
+  .home-page .honor-date { font-size: 12px; line-height: 20px; padding: 0; }
+  .home-page .honor-title { font-size: 15px; line-height: 23px; }
+  .home-page .entry-note { font-size: 12px; line-height: 20px; }
+}
+@media(max-width:380px) {
+  .home-page .site-header { display: block; }
+  .home-page nav { justify-content: space-between; }
+}
+@media(max-width:360px) {
+  .home-page .intro { grid-template-columns: minmax(0,1fr) 80px; }
+  .home-page .portrait { width: 80px; }
+  .home-page h1 { font-size: 28px; line-height: 34px; }
+  .home-page .paper h3 { font-size: 19px; line-height: 27px; }
+}
+@media(min-width:701px) { .home-page .paper h3 { text-wrap: balance; } }
