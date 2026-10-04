@@ -117,3 +117,5 @@
   .home-page .paper h3 { font-size: 19px; line-height: 27px; }
 }
 @media(min-width:701px) { .home-page .paper h3 { text-wrap: balance; } }
+
+.home-page .native-name { font-size: 18px; font-weight: 500; letter-spacing: 0; white-space: nowrap; }
